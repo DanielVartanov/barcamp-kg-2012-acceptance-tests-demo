@@ -33,6 +33,7 @@ ActionController::Base.allow_rescue = false
 # For some databases (like MongoDB and CouchDB) you may need to use :truncation instead.
 DatabaseCleaner.strategy = :truncation
 
+Capybara.default_wait_time = 5
 Capybara.javascript_driver = :webkit
 
 # You may also want to configure DatabaseCleaner to use different strategies for certain features and scenarios.
