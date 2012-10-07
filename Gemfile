@@ -20,4 +20,5 @@ group :test do
   gem 'cucumber-rails-training-wheels'
   gem 'capybara-webkit'
   gem 'database_cleaner'
+  gem 'rspec-rails'
 end
