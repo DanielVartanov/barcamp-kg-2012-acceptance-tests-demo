@@ -5,7 +5,8 @@ Given /я нахожусь на главной странице/ do
 end
 
 Given /я нахожусь на странице регистрации/ do
-  visit '/signup'
+  visit '/'
+  click_link('Регистрация')
 end
 
 When /ввожу "(.*)" в поле "(.*)"$/ do |value, field|

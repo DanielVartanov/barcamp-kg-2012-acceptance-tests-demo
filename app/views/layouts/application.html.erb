@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'layouts/notices' %>
+  <ul class="hmenu">
+    <%= render 'users/shared/signup_links' %>
+    <%= render 'users/shared/login_links' %>
+  </ul>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
