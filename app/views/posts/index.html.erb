@@ -1,0 +1,8 @@
+<% @posts.each do |post| %>
+  <div>
+    <%= post.user.email %><br/>
+    <%= post.created_at %><br/>
+    <%= post.title.html_safe %><br/>
+    <%= post.body %><br/><br/>
+  </div>
+<% end %>

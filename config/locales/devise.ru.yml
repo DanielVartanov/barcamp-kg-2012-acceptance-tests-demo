@@ -73,3 +73,6 @@ ru:
     registrations:
       user:
         signed_up: "Спасибо за регистрацию"
+    failure:
+      user:
+        unauthenticated: "Вам необходимо войти в систему или зарегистрироваться."
