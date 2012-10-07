@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
 
-Given /я нахожусь на главной странице/ do
-  visit '/'
-end
-
-Given /я нахожусь на странице регистрации/ do
-  visit '/'
-  click_link('Регистрация')
+When /иду по адресу "(.*)"/ do |path|
+  visit path
 end
 
 When /ввожу "(.*)" в поле "(.*)"$/ do |value, field|

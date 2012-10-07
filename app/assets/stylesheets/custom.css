@@ -1,6 +1,5 @@
 #window .title {
   height:240px; 
-  background-color:#ff874c; 
   text-shadow:0px 0px 2px #bbb; 
   color:#fff; 
   font-family: 'Arial Black', sans-serif; 
@@ -18,4 +17,17 @@
   border-right:1px solid #bbb; 
   border-top:1px solid #bbb; 
   box-shadow:inset 0px 0px 6px #ccc;
+}
+
+.toolbar {
+  float:left; 
+  line-height:30px; 
+  margin-right:12px;
+}
+
+#window {
+  border: 1px solid whiteSmoke;
+  border-radius: 3px;
+  background: white;
+  box-shadow: whiteSmoke 0px 1px 2px;
 }
