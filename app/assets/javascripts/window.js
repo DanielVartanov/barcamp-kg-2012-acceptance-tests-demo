@@ -9,8 +9,8 @@ function open_window(remote_path) {
         var windowWidth = window.innerWidth;
         var popupWidth = $("#window").width();
         var newLeft = windowWidth/2-popupWidth/2;
-        if (newLeft < 32) {
-            newLeft = 32;
+        if (newLeft < 100) {
+            newLeft = 100;
         }
         $("#window").css({
             "position": "absolute",
