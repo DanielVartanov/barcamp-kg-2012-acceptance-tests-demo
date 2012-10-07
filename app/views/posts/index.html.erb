@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+  <%= render 'toolbar' %>
+<% end %>
+
 <% @posts.each do |post| %>
   <div>
     <%= post.user.email %><br/>

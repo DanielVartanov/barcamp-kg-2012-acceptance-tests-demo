@@ -1,3 +1,6 @@
 <h1>Ultimate blogging platform</h1><br/>
 
-<%= link_to "Создать запись", new_post_path %>
+<% if user_signed_in? %>
+  <%= render 'posts/toolbar' %>
+<% end %>
+

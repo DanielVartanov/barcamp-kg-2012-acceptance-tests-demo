@@ -8,12 +8,17 @@ class PostsController < ApplicationController
   end
 
   def new
-
+    render :layout => 'window'
   end
 
   def create
     if @post.save
-      redirect_to posts_path, notice: "Пост создан"
+      respond_to do |format|
+        format.html do
+          redirect_to :posts, notice: "Запись создана!"
+        end
+        format.json { render :json => @order, status: 201, location: order_url(@order) }
+      end
     else
       render 'new'
     end
